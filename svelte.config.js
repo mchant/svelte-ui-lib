@@ -5,12 +5,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
-		adapter: adapter(),
-		// Tells SvelteKit this is a library, not an app
-		package: {
-			dir: 'dist',
-			emitTypes: true
-		}
+		adapter: adapter()
 	}
 };
 
